@@ -2,11 +2,16 @@
 
 var http = require ("http");
 
-var toDoList = require ("./toDoList");
+let listing = require ("./toDoList");
+
+// get a random item from toDoList
+let item = listing.toDoList[Math.floor((Math.random() * listing.toDoList.length) + 1)];
+
+//console.log(item);
 
 http.createServer(function(request, response) {
   response.writeHead(200, { "Content-type": "text/plain" });
-  response.write(toDoList);
+  response.write(item);
   response.end();
-}).listen(8888);
+}).listen(3000);
  

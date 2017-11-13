@@ -3,9 +3,12 @@ const toDoList = [
 "Correct LinkedIn Info",
 "Review/Update Resume",
 "Connect with Contacts via LinkedIn",
-"Look at Jobs on Trello"
+"Look at Jobs on Trello",
+"Watch Redux Videos",
+"Fix FlashCards Lab",
+"Muck About with Shopping List Lab",
+"Try to Complete Reddit Lab"
 ];
 
-let test = "fun facts to know and yell";
 
-module.exports.test = test;
+module.exports.toDoList = toDoList;
